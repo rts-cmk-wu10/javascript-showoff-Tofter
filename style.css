@@ -3,3 +3,63 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.nav {
+	visibility: hidden;
+}
+
+body {
+	max-width: 1280px;
+	background-color: rgb(220, 164, 164);
+}
+
+.searchForm {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 2em;
+	margin-top: 7em;
+	gap: 1em;
+}
+
+.searchForm__input {
+	border-radius: 5px;
+	padding: 0.5em;
+}
+
+.searchForm__search {
+	padding: 0.5em 2em;
+	border-radius: 10px;
+	background-color: rgb(215, 166, 166);
+}
+
+.results__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2em;
+	padding: 0 7em 0 7em;
+	margin-bottom: 4em;
+
+}
+
+.movies__group {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	border: 2px solid black;
+	border-radius: 5px;
+	border-top-right-radius: 10px;
+	padding: 1em;
+	background-color: rgb(205, 145, 145);
+}
+
+.movies__group:hover {
+	scale: 1.6;
+	transition: 0.6s ease;
+	transform: rotate(360deg);
+}
+
+.movies__actors,
+.movies__genre,
+.movies__published {
+	list-style: none;
+	border-bottom: 1px solid black;
+}
